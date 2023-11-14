@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container mx-auto max-w-4xl">
+        <h1 class="font-bold text-2xl mb-one">JSON pipicode</h1>
+        <h2>When to use</h2>
+        <p>JSONPlaceholder is a free online REST API that you can use <strong>whenever you need some fake data</strong>. It can be in a README on GitHub, for a demo on CodeSandbox, in code examples on Stack Overflow, ...or simply to test things locally.</p>
+
+        <h2>Resources</h2>
+        <p>JSONPlaceholder comes with a set of 6 common resources:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="/json/posts">/posts</a></td>
+                    <td>100 posts</td>
+                </tr>
+                <tr>
+                    <td><a href="/json/comments">/comments</a></td>
+                    <td>500 comments</td>
+                </tr>
+                <tr>
+                    <td><a href="/json/albums">/albums</a></td>
+                    <td>100 albums</td>
+                </tr>
+                <tr>
+                    <td><a href="/json/photos">/photos</a></td>
+                    <td>5000 photos</td>
+                </tr>
+                <tr>
+                    <td><a href="/json/todos">/todos</a></td>
+                    <td>200 todos</td>
+                </tr>
+                <tr>
+                    <td><a href="/json/users">/users</a></td>
+                    <td>10 users</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Routes</h2>
+        <p>All HTTP methods are supported. You can use http or https for your requests.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>GET</td>
+                    <td><a href="/json/posts">/posts</a></td>
+                </tr>
+                <tr>
+                    <td>GET</td>
+                    <td><a href="/json/posts/1">/posts/1</a></td>
+                </tr>
+                <tr>
+                    <td>GET</td>
+                    <td><a href="/json/comments/2">/comments/2</a></td>
+                </tr>
+                <tr>
+                    <td>GET</td>
+                    <td><a href="/json/albums/3">/albums/3</a></td>
+                </tr>
+        </table>
+    </div>
+{% endblock %}
